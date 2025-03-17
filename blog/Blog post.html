@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        header {
+            background-color: yellowgreen;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: darkkhaki;
+        }
+        .blog-post {
+            margin-bottom: 30px;
+        }
+        .blog-post img {
+            width: 300px; 
+            height: auto; 
+        }
+        .blog-post h2 {
+            color: orange;
+            font-family: 'Georgia', serif;
+        }
+        .blog-post .date {
+            font-style: italic;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .blog-post p {
+            line-height: 1.6;
+            color: darkcyan;
+        }
+
+        .sidebar {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: burlywood;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: navy;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Self Development Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <main class="col-md-8">
+                <div class="card blog-post">
+                    <div class="card-body">
+                        <img src="blog1.jpg" alt="motivational image">
+                        <h2 class="card-title">Embracing the Journey of Growth</h2>
+                        <p class="date">Published on: March 14, 2025</p>
+                        <p class="card-text">Personal growth is not just about setting goals; it's about embracing challenges, learning from setbacks, and celebrating progress. Each step you take — no matter how small — is a victory. The feeling of accomplishment when you achieve something you've worked hard for is incredibly rewarding. Whether you're building new habits, exploring mindfulness, or developing new skills, there’s always room to grow and thrive.</p>
+                    </div>
+                </div>
+
+                <div class="card blog-post">
+                    <div class="card-body">
+                        <img src="blog2.jpg" alt="Inspiring Image">
+                        <h2 class="card-title">Cultivating a Growth Mindset</h2>
+                        <p class="date">Published on: March 14, 2025</p>
+                        <p class="card-text">Developing a growth mindset is key to unlocking your full potential. It’s the belief that your abilities and intelligence can be developed through dedication and hard work.  
+                            Start by embracing challenges rather than avoiding them. Each setback is an opportunity to learn and improve. When faced with obstacles, ask yourself: *"What can I learn from this?"*  
+                            Surround yourself with positive influences, practice self-reflection, and celebrate progress — no matter how small. Remember, growth is a journey, not a destination. With consistent effort and an open mind, you can achieve more than you ever imagined.</p>
+                    </div>
+                </div>
+
+                <div class="card blog-post">
+                    <div class="card-body">
+                        <img src="0a6da17c-077d-4f0c-9f90-00233995dc9e.webp" alt="Motivational Image">
+                        <h2 class="card-title">Harnessing Data for Personal Growth</h2>
+                        <p class="date">Published on: March 14, 2025</p>
+                        <p class="card-text"> Just as data drives insights in industries, tracking your personal progress can fuel self-development. By setting goals, measuring your habits, and reflecting on your progress, you can make informed decisions to improve your lifestyle, mindset, and productivity.  
+                            Tools like journaling, habit-tracking apps, and reflection exercises can help you gather insights about your routines and Remember, self-awareness is the first step toward transformation — and data can be your guide.</p>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="col-md-4 sidebar">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">Breaking Free from Comfort Zones: How to Embrace Change</a></li>
+                    <li><a href="#">The Power of Morning Routines: Start Your Day with Purpose</a></li>
+                    <li><a href="#">Mindful Living: Finding Balance in a Fast-Paced World</a></li>
+                </ul>
+
+                <h3>Search</h3>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: self@gmail.com | Follow me:
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
