@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: coral; 
+            padding: 1rem 0;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .hero {
+            background-image: url("skincare.jpg"); 
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero .btn-primary {
+            background-color: skyblue;
+            border-color: blue;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 30px;
+        }
+        .features {
+            padding: 50px 0;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .feature-card i {
+            font-size: 3rem;
+            color: blue;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .testimonials {
+            background-color: lightslategray;
+            padding: 50px 0;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .testimonial blockquote {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            font-weight: bold;
+        }
+        .footer {
+            background-color: darkslategray;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">GlowLeaf Skincare</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Reveal Your Natural Glow</h1>
+            <p>Achieve luminous, healthy skin with our nourishing skincare formula — crafted with nature’s finest ingredients for a radiant, youthful look.</p>
+            <a href="#features" class="btn btn-primary">Discover More</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Natura Ingredients</h3>
+                    <p>Crafted with pure botanical extracts to nourish and rejuvenate your skin naturally.</p>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Deep Hydration</h3>
+                    <p>Our advanced formula locks in moisture, keeping your skin soft, supple, and glowing all day.</p>
+                </div>
+                <div class="col-md-4 feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Radiant Glow</h3>
+                    <p>Achieve a luminous complexion with antioxidants that restore your skin’s youthful radiance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 testimonial">
+                    <blockquote>"My skin has never felt this soft and radiant! I absolutely love it!"</blockquote>
+                    <p>- Emma Thompson</p>
+                </div>
+                <div class="col-md-4 testimonial">
+                    <blockquote>"I've struggled with dry skin for years, and this product changed everything. Hydration that lasts!"</blockquote>
+                    <p>- Sophia Patel</p>
+                </div>
+                <div class="col-md-4 testimonial">
+                    <blockquote>"I noticed a visible glow within a week. It’s now a must-have in my skincare routine!"</blockquote>
+                    <p>- Olivia Martinez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about our skincare range? We’d love to hear from you!</p>
+    
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="e.g., Emma Thompson" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="e.g., emma@example.com" required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="e.g., Product Inquiry, Feedback, etc." required>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+    
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GlowLeaf Skincare. All rights reserved.</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <p>Email: info@glowleaf.com</p>
+        </div>
+    </footer>
+</body>
+</html>
